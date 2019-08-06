@@ -1,0 +1,260 @@
+.header{
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    top:0;
+    z-index: 99;
+    background:#0e290e(0,0,0,.4);
+  
+}
+
+.header .daohan{
+    height: 34px;
+    float: left;
+    
+}
+.header .kaishi .daohantio a{
+    float: right;
+    font-size: 14px;
+    display:inline-block;
+    width: 85px;
+    height: 58px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    line-height: 58px;
+    margin: 0 10px;
+}
+
+.header .kaishi .daohantio a:hover{
+    background: #bf4609;
+
+
+}
+
+
+    /* 轮播图开始 */
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.banner{
+    width: 100%;
+    /*height: 560px;*/
+    /*background: black;*/
+    /*子绝父相*/
+    position: relative;
+    /*超出部分全部隐藏，解决横向滚动条*/
+    overflow: hidden;
+}
+.banner ul{
+    position: absolute;
+}
+.banner ul li{
+    /*这个100%是相对于父盒子的（会把父盒子的宽度继承过来,如父盒子300%,这这里的100%就会相当于300%）*/
+    width: 100%;
+    height: 560px;
+    float: left;
+    background:  no-repeat center center;
+}
+/*.banner ul li:nth-child(1){*/
+    /*background: url('./1.jpg') no-repeat center center;*/
+/*}*/
+/*.banner ul li:nth-child(2){*/
+    /*background: url('./2.jpg') no-repeat center center;*/
+/*}*/
+/*.banner ul li:nth-child(3){*/
+    /*background: url('./3.jpg') no-repeat center center;*/
+/*}*/
+.banner ol{
+    /*width: 60px;*/
+    height: 20px;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    left:50%;
+    /*margin-left: -40px;*/
+    bottom: 30px;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+.banner ol li{
+    width: 10px;
+    height: 10px;
+    float: left;
+    margin: 5px 5px;
+    background: rgba(255,255,255,0.5);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.banner ol .current{
+    background: rgba(255,255,255,1);
+}
+.banner i{
+    width: 58px;
+    height: 120px;
+    position: absolute;
+    top: 50%;
+    margin-top: -60px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: none;
+}
+.banner .left{
+    left: 60px;
+    background: url('../images/left_right.png') no-repeat 0 0px;
+}
+.banner .right{
+    right: 60px;
+    background: url('../images/left_right.png') no-repeat 0px -120px;
+}
+.banner .left:hover , .banner .right:hover{
+    background-color: rgba(0, 0, 0, 0.31);
+}
+
+    /* 轮播图结束 */
+
+.information{
+    background: #fff;
+    height: 1360px;
+}
+
+.information .dontai{
+    height: 30px;
+    padding: 40px 60px;
+}
+.information .dontai a{
+    font-size: 18px;
+    color: #434343;
+}
+.information .dontai a img{
+    margin-right: 15px;
+}
+.information .dontai a:not(:first-child):not(:last-child):after{
+    content:">";
+    margin:0 5px;
+}
+.information .dontai a:hover{
+    color: #fd7a39;
+}
+
+.information .mation{
+    font-size: 24px;
+    color: #2a5320;
+    text-align: center;
+}
+
+.information .zhangshi .riqi img{
+    width: 240px;
+    height: 150px;
+    margin: 20px 0px 20px 0px;
+  
+}
+.information .zhangshi .riqi{
+    display: flex;
+    align-items:center;
+    line-height: 25px;
+    border-bottom:1px #e5e5e5 solid;
+    width: 1050px;
+}
+
+
+.information .zhangshi .riqi:hover{
+    background: #f2f8f4;
+}
+.information .zhangshi .riqi:hover .riqi2{
+    background: #b8b8b8;
+}
+.information .zhangshi .riqi:hover .apic h3{
+    color: #fc976f;
+}
+
+.information .zhangshi{
+    border-top:1px solid;
+    width: 92%;
+    height: 1px;
+    background: #e5e5e5;
+    margin: 0 auto;
+    margin-top: 80px;
+   padding: 0 80px;
+}
+.information .zhangshi .riqi2{
+    background: #e7e7e7;
+    width: 80px;
+    height: 70px;
+    margin: 15px;
+}
+.information .zhangshi .riqi2 h1{
+    font-size: 16px;
+    text-align: center;
+    color: #000;
+    margin-top: 20px;
+}
+.information .zhangshi .riqi2 h5{
+    font-size: 12px;
+    color: #000;
+    text-align: right;
+    margin-right: 20px;
+}
+.information .zhangshi .apic h3{
+    font-size: 16px;
+    color: #000;
+}
+
+.information .zhangshi .apic h6{
+    font-size: 14px;
+    color: #000;
+    margin-top: 10px;
+}
+.information .zhangshi .apic p{
+    font-size: 12px;
+    color: #7a7a7a;
+    
+}
+.information .zhangshi .apic{
+    height: 140px;
+    
+}
+.information .zhangshi .apic a{
+    font-size: 12px;
+    color: #fd9a5d;
+}
+.fenye{
+    height: 150px;
+    background: #fff;
+    text-align: center;
+}
+.fenye .pagination a{
+    color: #000;
+}
+.fenye .pagination a:hover{
+    color: #fff;
+    background: #f37e1f;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    background: #1a1a1a;
+    height: 90px;
+}
+.footer .yejiao{
+    font-size: 14px;
+    color: #626262;
+    text-align: center;
+    padding-top: 30px;
+}
